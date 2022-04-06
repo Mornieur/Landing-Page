@@ -1,0 +1,30 @@
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+
+h1,
+.title1 {
+  font-size: 6rem;
+  position: relative;
+  @media (max-width: 767px) {
+    font-size: 4rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 2px;
+    top: -5rem;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.title1--mod {
+  &::before {
+    content: "";
+    opacity: 0.6;
+  }
+}

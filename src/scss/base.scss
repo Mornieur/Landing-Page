@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  margin-left: 10rem;
+  margin-right: 0;
+  padding: 2rem;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.btn {
+  width: 100%;
+  max-width: 13rem;
+  padding: 2rem;
+  border: 1px solid var(--white-test);
+  border-radius: 5px;
+  background: var(--white-test);
+  color: #1d164d;
+  text-align: center;
+  &--nav-btn {
+    border: none;
+    color: var(--green-hf-test);
+  }
+
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 6rem 0;
+}
